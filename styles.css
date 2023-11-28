@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "League Spartan", system-ui, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    background-color: #dbdbdb;
+}
+
+.container {
+    border: 2px solid #222;
+    padding: 11px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.name {
+    flex: 1 0 10rem;
+    padding: 5px;
+    border: 2px solid #222;
+    border-radius: 5px;
+}
+
+.name::placeholder {
+    padding-left: 5px;
+    opacity: 85%;
+}
+
+.email {
+    flex: 1 0 10rem;
+    padding: 5px;
+    border: 2px solid #222;
+    border-radius: 5px;
+}
+
+.email::placeholder {
+    padding-left: 5px;
+    opacity: 85%;
+}
+
+.button {
+    flex: 1 0 5rem;
+    background-color: #c0b9a5;
+    padding: 9px;
+    border: 2px solid #222;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #988f76;
+    transition: 0.5s;
+}
+
+.title-signup {
+    font: 400;
+    color: #222;
+    font-size: 25px;
+    text-align: center;
+}
