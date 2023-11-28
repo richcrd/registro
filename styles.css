@@ -24,57 +24,65 @@ body {
 }
 
 .container {
-    border: 2px solid #222;
-    padding: 11px;
-    border-radius: 10px;
-    margin: 30px 30px 5px 30px;
-}
+    max-width: 400px;
+    margin: 15px auto;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+  }
 
-.form {
+  form {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
 
-.name {
-    flex: 1 0 10rem;
-    padding: 5px;
-    border: 2px solid #222;
-    border-radius: 5px;
-}
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
 
-.name::placeholder {
-    padding-left: 5px;
-    opacity: 85%;
-}
+  input,
+  textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 8px;
+  }
 
-.email {
-    flex: 1 0 10rem;
-    padding: 5px;
-    border: 2px solid #222;
-    border-radius: 5px;
-}
+  input::placeholder {
+    opacity: 50%;
+  }
 
-.email::placeholder {
-    padding-left: 5px;
-    opacity: 85%;
-}
+  textarea::placeholder {
+    font-family: sans-serif;
+    opacity: 50%;
+  }
 
-.button {
-    flex: 1 0 5rem;
-    background-color: #8cbd88;
-    padding: 9px;
-    border: 2px solid #222;
-    border-radius: 5px;
-    font-weight: 700;
+  button {
+    background-color: #6d936f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
+    font-size: 16px;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 8px;
+  }
 
-.button:hover {
-    background-color: #3c6238;
-    transition: 0.5s;
-    color: #fff;
-}
+  button:hover {
+    background-color: #668468;
+  }
 
 .title-signup {
     font: 400;
